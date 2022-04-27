@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pantalla5"
+    android:gravity="center"
+    android:background="#47BBEF">
+
+    <TextView
+        android:id="@+id/menupizzas"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:text="Ellige tu Torta" />
+
+    <ImageView
+        android:id="@+id/pizza1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/menupizzas"
+        android:layout_alignStart="@+id/menupizzas"
+        android:layout_alignEnd="@+id/menupizzas"
+        android:src="@drawable/torta1" />
+
+    <ImageView
+        android:id="@+id/pizza2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/pizza1"
+        android:layout_alignStart="@+id/pizza1"
+        android:layout_alignEnd="@+id/pizza1"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:src="@drawable/torta2" />
+
+    <ImageView
+        android:id="@+id/pizza3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/pizza2"
+        android:layout_alignStart="@+id/pizza2"
+        android:layout_alignEnd="@+id/pizza2"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="-3dp"
+        android:src="@drawable/torta3" />
+
+    <TextView
+        android:id="@+id/costo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menupizzas"
+        android:layout_marginStart="62dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="41dp"
+        android:layout_toEndOf="@+id/pizza1"
+        android:layout_toRightOf="@id/pizza1"
+        android:text="Jamón $15" />
+
+    <TextView
+        android:id="@+id/costo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pizza2"
+        android:layout_alignStart="@+id/pizza2"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="201dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="-79dp"
+        android:layout_toRightOf="@id/pizza2"
+        android:text="Pollo $20" />
+
+    <TextView
+        android:id="@+id/costo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pizza3"
+        android:layout_alignStart="@+id/pizza3"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="203dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="-93dp"
+        android:layout_toRightOf="@id/pizza3"
+        android:text="Asado $25" />
+
+    <EditText
+        android:id="@+id/comprarp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pizza3"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="37dp"
+        android:layout_weight="2"
+        android:hint="Torta (nombre)"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/preciop"
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/comprarp"
+        android:layout_alignEnd="@+id/comprarp"
+        android:layout_alignBottom="@+id/comprarp"
+        android:layout_marginStart="186dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginEnd="-131dp"
+        android:layout_marginBottom="-1dp"
+        android:layout_toRightOf="@id/comprarp"
+        android:hint="costo"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/menubebida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comprarp"
+        android:layout_marginTop="14dp"
+        android:text="Bebidas" />
+
+    <Button
+        android:id="@+id/pagarp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/menubebida"
+        android:layout_alignBottom="@+id/menubebida"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toEndOf="@+id/menubebida"
+        android:text="Pagar" />
+
+</RelativeLayout>

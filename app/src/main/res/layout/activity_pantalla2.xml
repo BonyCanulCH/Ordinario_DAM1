@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pantalla2"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/mensaje"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:text="mensaje" />
+
+    <ImageButton
+        android:id="@+id/boton1"
+        android:layout_width="250dp"
+        android:layout_height="139dp"
+        android:layout_below="@+id/mensaje"
+        android:layout_alignStart="@+id/mensaje"
+        android:layout_alignEnd="@+id/mensaje"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="46dp"
+        android:src="@drawable/taco" />
+
+    <ImageButton
+        android:id="@+id/boton2"
+        android:layout_width="244dp"
+        android:layout_height="160dp"
+        android:layout_below="@+id/boton1"
+        android:layout_alignStart="@+id/boton1"
+        android:layout_alignEnd="@+id/boton1"
+        android:layout_marginEnd="6dp"
+        android:src="@drawable/torta" />
+
+    <ImageButton
+        android:id="@+id/boton3"
+        android:layout_width="283dp"
+        android:layout_height="183dp"
+        android:layout_below="@+id/boton2"
+        android:layout_alignStart="@+id/boton1"
+        android:layout_alignEnd="@+id/boton1"
+        android:src="@drawable/bebida" />
+
+    <Button
+        android:id="@+id/regresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/boton2"
+        android:layout_alignStart="@+id/boton2"
+        android:layout_alignEnd="@+id/boton2"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="2dp"
+        android:text="Volver" />
+
+</RelativeLayout>

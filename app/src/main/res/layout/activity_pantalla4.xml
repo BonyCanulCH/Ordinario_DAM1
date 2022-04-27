@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pantalla4"
+    android:background="#FFC107">
+
+    <TextView
+        android:id="@+id/menubebidas"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+
+        android:text="Ellige tu Taco" />
+
+    <ImageView
+        android:id="@+id/bebida1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/menubebidas"
+        android:layout_alignStart="@+id/menubebidas"
+        android:layout_alignEnd="@+id/menubebidas"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="-28dp"
+        android:src="@drawable/taco1" />
+
+    <ImageView
+        android:id="@+id/bebida2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/bebida1"
+        android:layout_alignStart="@+id/bebida1"
+        android:layout_alignEnd="@+id/bebida1"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:src="@drawable/taco2" />
+
+    <ImageView
+        android:id="@+id/bebida3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/bebida2"
+        android:layout_alignStart="@+id/bebida2"
+        android:layout_alignEnd="@+id/bebida2"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="-3dp"
+        android:src="@drawable/taco3" />
+
+    <TextView
+        android:id="@+id/costo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menubebidas"
+        android:layout_marginStart="71dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="89dp"
+        android:layout_toEndOf="@+id/bebida1"
+        android:layout_toRightOf="@id/bebida1"
+        android:text="Taco Carne Molida $50" />
+
+    <TextView
+        android:id="@+id/costo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bebida2"
+        android:layout_alignStart="@+id/bebida2"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="183dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="-59dp"
+        android:layout_toRightOf="@id/bebida2"
+        android:text="Taco de Pechuga $70" />
+
+
+    <TextView
+        android:id="@+id/costo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bebida3"
+        android:layout_alignStart="@+id/bebida3"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="193dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="-55dp"
+        android:layout_toRightOf="@id/bebida3"
+        android:text="Taco de Asado $95" />
+
+    <EditText
+        android:id="@+id/comprarb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bebida3"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="39dp"
+        android:layout_weight="2"
+        android:hint="Taco (nombre)"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/preciob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/comprarb"
+        android:layout_alignEnd="@+id/comprarb"
+        android:layout_alignBottom="@+id/comprarb"
+        android:layout_marginStart="219dp"
+        android:layout_marginLeft="99dp"
+        android:layout_marginEnd="-171dp"
+        android:layout_marginBottom="-1dp"
+        android:layout_toRightOf="@id/comprarb"
+        android:hint="Costo"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/menupizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comprarb"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="15dp"
+        android:text="tortas" />
+
+    <Button
+        android:id="@+id/pagarb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/menupizza"
+        android:layout_alignBottom="@+id/menupizza"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toEndOf="@+id/menupizza"
+        android:text="Pagar" />
+
+</RelativeLayout>
