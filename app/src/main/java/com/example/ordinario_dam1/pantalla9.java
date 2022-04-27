@@ -38,7 +38,7 @@ public class pantalla9 extends AppCompatActivity {
 
 
             if(!dato1.equals("")&&!dato2.equals("")&&!dato3.equals("")&&!dato4.equals("")&&!dato5.equals("")&&!dato6.equals("")){
-                mensaje1.setText("Estimado "+dato1+" con direccion: " +dato2+ " has seleccionado la pizza " +dato3+ " con la bebida " +dato4+ " el total de la compra es: " +nfinal);
+                mensaje1.setText("Estimado "+dato1+" con destino: " +dato2+ " has seleccionado " +dato3+ " y " +dato4+ " el total de la compra es: " +nfinal);
 
             }
             else
@@ -77,7 +77,7 @@ public class pantalla9 extends AppCompatActivity {
 
 
         if(!dato1.equals("")&&!dato2.equals("")&&!dato3.equals("")&&!dato4.equals("")&&!dato5.equals("")&&!dato6.equals(""))
-            mensaje1.setText("Estimado "+dato1+" con direccion: "+dato2+" has seleccionado la pizza " +dato3+" con la bebida "+dato4+ "el total de la compra es: " +nfinal);
+            mensaje1.setText("Estimado "+dato1+" con destino: "+dato2+" has seleccionado " +dato3+" y "+dato4+ "el total de la compra es: " +nfinal);
 
         else
             mensaje1.setText("Los datos que enviaste son incorrectos nombre: "+dato1+" direccion: "+dato2+ "Pizza: " +dato3+ "Bebida: "+dato4);
